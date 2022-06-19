@@ -26,9 +26,7 @@ public class Chrono {
                 csvWriter.write("N,seconds,");
             csvWriter.write("N,seconds\n");
 
-            int observaciones, status, currentN;
-            currentN = MIN_CASOS;
-
+            int currentN = MIN_CASOS;
             for (int i = 0; i < OBSERVATIONS; i++) {
                 String casosFile = "C://Users//alvar//xXx//ML//repoJava//N//erasmus//casos.txt";
                 try (BufferedWriter casosWriter = new BufferedWriter(new FileWriter(casosFile, false))) {
